@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InsideOfASkullScene.unity
     guid: 2a696db5e80f6ae409b09a6fd37de160
+  - enabled: 1
+    path: Assets/Scenes/SkeletalLab.unity
+    guid: ee00a78463688b84b9beb37a762b1d78
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 017a9c16220d0724db6206b17ce0b064, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: b725d46401c181e4c9f9da624f67a32f, type: 2}
