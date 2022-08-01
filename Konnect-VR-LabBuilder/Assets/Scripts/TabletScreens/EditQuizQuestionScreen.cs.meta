@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Konnect-VR-LabBuilder/Assets/Scripts/Networking/NetworkCustomSettings.cs.meta
+guid: a9d14c38dd7140a4e96e34933cf46f4d
+========
+guid: a0fc5c90e0ff37043a07d757699649fc
+>>>>>>>> MultiplayerTest:Konnect-VR-LabBuilder/Assets/EditQuizQuestionScreen.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

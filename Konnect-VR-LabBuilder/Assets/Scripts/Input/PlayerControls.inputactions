@@ -1,0 +1,90 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "SystemActions",
+            "id": "08696174-7de9-426e-9973-f9c3217c8fb0",
+            "actions": [
+                {
+                    "name": "ToggleLeftRayInteractor",
+                    "type": "Button",
+                    "id": "3b91f167-895d-4294-ac2f-b0a11ac023e4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ToggleRightRayInteractor",
+                    "type": "Button",
+                    "id": "5748574e-fa47-4ff6-96fb-c54b0277e604",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TeleportTabletLeft",
+                    "type": "Button",
+                    "id": "d9821a9d-a752-4ae9-84b6-a35eee8256ff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TeleportTabletRight",
+                    "type": "Button",
+                    "id": "31354a81-13ca-4b7e-a6f2-5e2f595708e7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "00ae3a99-5398-44ad-b0db-9e6ba15d12d5",
+                    "path": "<XRController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleRightRayInteractor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "07119468-df46-48d4-bc00-b93e13075d95",
+                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleLeftRayInteractor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d648994c-4c1f-4d5e-a44e-ad4c04df5697",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportTabletLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d99165d-b41a-4a81-b741-8c428a7bd9cc",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportTabletRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

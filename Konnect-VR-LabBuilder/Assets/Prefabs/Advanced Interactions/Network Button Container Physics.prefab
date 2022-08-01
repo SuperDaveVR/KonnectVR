@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &560565298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560565299}
+  - component: {fileID: 560565300}
+  m_Layer: 0
+  m_Name: OnButtonRelease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &560565299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560565298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1807771905}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &560565300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560565298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 284656567363383033}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: stopIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1807771904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807771905}
+  m_Layer: 0
+  m_Name: Network Button Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807771905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807771904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1869521468}
+  - {fileID: 560565299}
+  m_Father: {fileID: 7735539692037076134}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1869521467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869521468}
+  - component: {fileID: 1869521469}
+  m_Layer: 0
+  m_Name: OnButtonPress
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1869521468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869521467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1807771905}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869521469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869521467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 284656567363383033}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: startIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &650275073541551106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735539692266574744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da16e26f6b876c448abb92766c36d386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameResolution: 10
+--- !u!114 &5584416495556452512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735539692266574744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65fbed0b0ac45a4b9baf7f54b16b541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformSpace: 0
+  interpolate: 1
+  interpolationFactor: 0.5
+  snapThreshold: 0.5
+  usePrediction: 1
+  velocitySource: 1
+  log: 0
+--- !u!1001 &8742853488836918014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1869521469}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 560565300}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182803999073, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: OnButtonRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.426
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.281
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.020002007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301244182981332571, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_Name
+      value: Network Button Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847370684892079206, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8838199158788953095, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: onIndependentInteractionStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8838199158788953095, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+      propertyPath: onIndependentInteractionStopped.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+--- !u!4 &7735539692037076134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1301244182981332568, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+  m_PrefabInstance: {fileID: 8742853488836918014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &284656567363383033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8838199158788953095, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+  m_PrefabInstance: {fileID: 8742853488836918014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e6b5c37250494cac36992eabb9ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7735539692266574744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1301244182803999078, guid: c2d321d3e04094f49957253692cf43ec, type: 3}
+  m_PrefabInstance: {fileID: 8742853488836918014}
+  m_PrefabAsset: {fileID: 0}

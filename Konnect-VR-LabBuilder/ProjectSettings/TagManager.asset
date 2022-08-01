@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - POS_Trigger
+  - NEG_Trigger
+  - ExistingModule
+  - Key
+  - Keyboard
+  - Connector
+  - QuizList
+  - LabFileManager
+  - FileSelectScreen
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Teleport
+  - Ray Interactor
+  - Keyboard
+  - Direct Interactor
+  - 
+  - 
+  - 
+  - 
+  - Stand up Skeleton
+  - 
+  - Attachment Sphere
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - InteractionPoint
+  - No Collision
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

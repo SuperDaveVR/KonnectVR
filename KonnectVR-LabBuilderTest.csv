@@ -1,0 +1,6 @@
+Quiz Name,Quiz Type,Randomize Question Order,Randomize Answer Order,,
+Testing Quiz,MultipleChoice,TRUE,FALSE,,
+Questions,,,,,
+Question,Choose Multiple?,Highlight?,Highlighted Object,Options,Correct Answer
+What about this?,FALSE,FALSE,,Yes|No|Maybe,Yes|No
+Does this work?,FALSE,FALSE,,Yes|No|Maybe,Yes

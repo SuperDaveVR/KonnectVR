@@ -1,0 +1,367 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &651481547543177883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131027561238589318}
+  m_Layer: 0
+  m_Name: NetworkEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131027561238589318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651481547543177883}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1803781625814084131}
+  - {fileID: 3420828399083645957}
+  - {fileID: 9164476132040050158}
+  m_Father: {fileID: 5899734009837790966}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1740719198523676321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9164476132040050158}
+  - component: {fileID: 5228210818495058020}
+  m_Layer: 0
+  m_Name: OnLeverNeutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9164476132040050158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740719198523676321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1131027561238589318}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5228210818495058020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740719198523676321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5707630860804726778}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: stopIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &2385773932849821706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803781625814084131}
+  - component: {fileID: 512726801494619583}
+  m_Layer: 0
+  m_Name: OnLeverUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803781625814084131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2385773932849821706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1131027561238589318}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &512726801494619583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2385773932849821706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5707630860804726778}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: startIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &5534441776187384927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3420828399083645957}
+  - component: {fileID: 4812649683955137209}
+  m_Layer: 0
+  m_Name: OnLeverDown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3420828399083645957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534441776187384927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1131027561238589318}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4812649683955137209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534441776187384927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5707630860804726778}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: startIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2551614251790796358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899734008926432857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da16e26f6b876c448abb92766c36d386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameResolution: 10
+--- !u!114 &824078526310508418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899734008926432857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65fbed0b0ac45a4b9baf7f54b16b541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformSpace: 0
+  interpolate: 1
+  interpolationFactor: 0.5
+  snapThreshold: 0.5
+  usePrediction: 1
+  velocitySource: 1
+  log: 0
+--- !u!1001 &6102239336867828173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 382685615410773994, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773994, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.021999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773994, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 512726801494619583}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverUp.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4812649683955137209}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverDown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverNeutral.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5228210818495058020}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverNeutral.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverUp.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverDown.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685615410773997, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: OnLeverNeutral.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237220, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_Name
+      value: Network Lever Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+--- !u!4 &5899734009837790966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 382685616594237243, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+  m_PrefabInstance: {fileID: 6102239336867828173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5707630860804726778 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1988926784984223287, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+  m_PrefabInstance: {fileID: 6102239336867828173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e6b5c37250494cac36992eabb9ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5899734008926432857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 382685615410773908, guid: c8844930942bd4e42a7664f449ab572b, type: 3}
+  m_PrefabInstance: {fileID: 6102239336867828173}
+  m_PrefabAsset: {fileID: 0}

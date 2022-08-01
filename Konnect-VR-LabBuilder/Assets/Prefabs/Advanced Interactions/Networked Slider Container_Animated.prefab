@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5793293676365367961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8913031028011645221}
+  - component: {fileID: 6509841209812181691}
+  m_Layer: 0
+  m_Name: SliderMin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8913031028011645221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793293676365367961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8007660891173488971}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6509841209812181691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793293676365367961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3140070742560148867, guid: 6b5f907cd788076459819329dfee37a6, type: 3}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: stopIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &7589269055673537112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8007660891173488971}
+  m_Layer: 0
+  m_Name: NetworkEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8007660891173488971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589269055673537112}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.06929502, y: 0.024999999, z: -0.06551794}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children:
+  - {fileID: 2848904364276442288}
+  - {fileID: 8913031028011645221}
+  m_Father: {fileID: 2124833726847569349}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7677778063471247335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2848904364276442288}
+  - component: {fileID: 396320083979019188}
+  m_Layer: 0
+  m_Name: SliderMax
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2848904364276442288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677778063471247335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8007660891173488971}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &396320083979019188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677778063471247335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3140070742560148867, guid: 6b5f907cd788076459819329dfee37a6, type: 3}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: startIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &7945300279701671895
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846219170333, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: m_Name
+      value: Networked Slider Container_Animated
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846383441142, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: OnSliderPositionChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 396320083979019188}
+    - target: {fileID: 8304511846383441142, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: OnSliderPositionChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846383441142, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: OnSliderPositionChange.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6509841209812181691}
+    - target: {fileID: 8304511846383441142, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: OnSliderPositionChange.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846383441142, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: OnSliderPositionChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304511846383441142, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+      propertyPath: OnSliderPositionChange.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+--- !u!4 &2124833726847569349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8304511846219170322, guid: 1daffb6807a30d7479d7d6193313ca3d, type: 3}
+  m_PrefabInstance: {fileID: 7945300279701671895}
+  m_PrefabAsset: {fileID: 0}

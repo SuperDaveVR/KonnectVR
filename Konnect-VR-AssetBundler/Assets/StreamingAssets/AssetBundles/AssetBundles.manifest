@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 1761383771
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: exampleassets.shapes
+      Dependencies: {}
+    Info_1:
+      Name: bones
+      Dependencies: {}

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Demos/Demo Module.unity
+    guid: 72802b34678b13c43bfb315a11df9e98
+  - enabled: 0
+    path: Assets/LabBuilderUI/Test-Scene.unity
+    guid: e50a7ce3e885d4c219bb83fde68e9544
+  - enabled: 1
+    path: Assets/Scenes/LoadScreen.unity
+    guid: da5bcac8187e0b145958b41fccbcdcfa
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: e7f72fcb4083de64d9ab2e15b2387f4e
+  - enabled: 1
+    path: Assets/Scenes/Builder Demo.unity
+    guid: 664fd290be24cb24389ff0695a59b287
+  - enabled: 1
+    path: Assets/Scenes/LabViewer.unity
+    guid: 40ad578510071c745bc15b36f7ed2136
+  - enabled: 1
+    path: Assets/Scenes/OnlineLabViewer.unity
+    guid: 1d0d54455badf194a87d5616e2ef3a90
+  - enabled: 1
+    path: Assets/Scenes/Demos/Avatar Custom.unity
+    guid: 391405db3dbd0524292d9940348d3d13
+  - enabled: 1
+    path: Assets/Scenes/InsideOfASkullScene.unity
+    guid: 2a696db5e80f6ae409b09a6fd37de160
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 017a9c16220d0724db6206b17ce0b064, type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: b725d46401c181e4c9f9da624f67a32f, type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: aab8a21a4a38d444f803b54e09e418f0, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 4e9a3205bc6438d4490499d7d31b757a, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 856b6f70e456d9347884cbf56c8aadf1, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9362e646e6272c349b4b3ce13ed626fc, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 1477676a0e7fa0547a7780e0e5c3a188, type: 2}

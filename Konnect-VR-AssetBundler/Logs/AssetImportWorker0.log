@@ -1,0 +1,1037 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1706; Version 2009; 64bit' Language: 'en' Physical Memory: 32616 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+G:/Game Design/Konnect-VR/Konnect-VR-AssetBundler
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57752
+Successfully changed project path to: G:/Game Design/Konnect-VR/Konnect-VR-AssetBundler
+G:/Game Design/Konnect-VR/Konnect-VR-AssetBundler
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 38.57 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.93 ms.
+Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path G:/Game Design/Konnect-VR/Konnect-VR-AssetBundler/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2988 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002104 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 70.03 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.13 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.693 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1693ms)
+		BeginReloadAssembly (49ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (441ms)
+			LoadAssemblies (46ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (139ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (184ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.083294 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 32.27 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.924 seconds
+Domain Reload Profiling:
+	ReloadAssembly (925ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (753ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (32ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2138 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.1 MB.
+System memory in use after: 92.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2575.
+Total: 3.169900 ms (FindLiveObjects: 0.254500 ms CreateObjectMapping: 0.114400 ms MarkObjects: 2.723700 ms  DeleteObjects: 0.076100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/BoneWorks
+  artifactKey: Guid(ec94393906e550442a086c87a839340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks using Guid(ec94393906e550442a086c87a839340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a9d64486a8492c17a3df449eafb939') in 0.029485 seconds 
+  Import took 0.032344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.512952 seconds.
+  path: Assets/BoneWorks/Prefabs
+  artifactKey: Guid(324ec3232f6ff97498a0c5e72f87ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs using Guid(324ec3232f6ff97498a0c5e72f87ab83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa41ec98fa0f7c659342267803a4714') in 0.037526 seconds 
+  Import took 0.040212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036014 seconds.
+  path: Assets/BoneWorks/Prefabs/Attachment_Sphere.prefab
+  artifactKey: Guid(f9b5a434a93fd474bb891481f2e73122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Attachment_Sphere.prefab using Guid(f9b5a434a93fd474bb891481f2e73122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '257a725bab8e69bc4d030f0bb2d98138') in 0.153975 seconds 
+  Import took 0.156739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/BoneWorks/Prefabs/RightRadiusandUlna.prefab
+  artifactKey: Guid(1f18a37e336d0db4c9a9dbcb7ee7ed4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightRadiusandUlna.prefab using Guid(1f18a37e336d0db4c9a9dbcb7ee7ed4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106f61318a14067b864bbfdc61b1d962') in 0.132252 seconds 
+  Import took 0.134906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/BoneWorks/Prefabs/RightHand.prefab
+  artifactKey: Guid(4aea2cdf9943e234aad2eb09e8685d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightHand.prefab using Guid(4aea2cdf9943e234aad2eb09e8685d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd6c84cc59fbdbf79375572e1fb5ec0') in 0.102432 seconds 
+  Import took 0.105121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftCollarBone.prefab
+  artifactKey: Guid(b1d896b33b0a49849a031d672f6e69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftCollarBone.prefab using Guid(b1d896b33b0a49849a031d672f6e69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e5f37ee02bb9213b6ed256189375a1') in 0.098387 seconds 
+  Import took 0.101184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/BoneWorks/Prefabs/RightHumerus.prefab
+  artifactKey: Guid(e315318c70419c8478fb6af40665b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightHumerus.prefab using Guid(e315318c70419c8478fb6af40665b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79851e3b6897996e2ba5673d0a95fd6') in 0.098155 seconds 
+  Import took 0.100920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/BoneWorks/Prefabs/Tailbone.prefab
+  artifactKey: Guid(0b4ba72c45b3a3c458a74c03b3ba5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Tailbone.prefab using Guid(0b4ba72c45b3a3c458a74c03b3ba5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad5b37a4095f46e177e6b0c48f580e0') in 0.097265 seconds 
+  Import took 0.100285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/BoneWorks/Prefabs/Spine.prefab
+  artifactKey: Guid(c4d252040b5172f459a8dad951113a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Spine.prefab using Guid(c4d252040b5172f459a8dad951113a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78938e33193e4f8a4498dfb1f8981436') in 0.105365 seconds 
+  Import took 0.108621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFoot.prefab
+  artifactKey: Guid(03c3c472dee678f4c82a1b6c8224bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFoot.prefab using Guid(03c3c472dee678f4c82a1b6c8224bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c7ee09a4eb8c9a52983bb9d761b9ca') in 0.104282 seconds 
+  Import took 0.106952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/BoneWorks/Prefabs/Skull.prefab
+  artifactKey: Guid(43cbb7dbc6e9e5d459f6c978bcf24cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Skull.prefab using Guid(43cbb7dbc6e9e5d459f6c978bcf24cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828ea5191a0cef802a671c90c06fa7d1') in 0.113863 seconds 
+  Import took 0.116666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFemur.prefab
+  artifactKey: Guid(c5e7012d3f9d66e4d8896b143ee73309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFemur.prefab using Guid(c5e7012d3f9d66e4d8896b143ee73309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6b4584773620d39eb3a69a1d65a3e2') in 0.109209 seconds 
+  Import took 0.111905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftHand.prefab
+  artifactKey: Guid(6771838e7bb0f5847822664923b181ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftHand.prefab using Guid(6771838e7bb0f5847822664923b181ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c3ae3b3fbfc593954c637b531b132a') in 0.114167 seconds 
+  Import took 0.116986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFibulaandTibia.prefab
+  artifactKey: Guid(9eacb13af908f3d4f9b03f7bdac89999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFibulaandTibia.prefab using Guid(9eacb13af908f3d4f9b03f7bdac89999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3cecd5a74424f9b6f1782d4a584722') in 0.117702 seconds 
+  Import took 0.120459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftKneeCap.prefab
+  artifactKey: Guid(089a26834f42145478da31c74261ef54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftKneeCap.prefab using Guid(089a26834f42145478da31c74261ef54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb7aa765590109b476df850ea1b9d33') in 0.122758 seconds 
+  Import took 0.125497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/BoneWorks/Prefabs/RightCollarBone.prefab
+  artifactKey: Guid(f356ef1c53bdacc44a74006c73283e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightCollarBone.prefab using Guid(f356ef1c53bdacc44a74006c73283e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e6d9f26fc693260dc19e17ea45b453') in 0.123633 seconds 
+  Import took 0.126323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/BoneWorks/Prefabs/BottomJaw.prefab
+  artifactKey: Guid(af58fdb243663e849986816b052663bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/BottomJaw.prefab using Guid(af58fdb243663e849986816b052663bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dacd23b89f0a8514c35663816981c09') in 0.129588 seconds 
+  Import took 0.132308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftHumerus.prefab
+  artifactKey: Guid(8568839f327337e41b04f191998ec617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftHumerus.prefab using Guid(8568839f327337e41b04f191998ec617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1a0fd78d64f90b58d9861607c950f8') in 0.123570 seconds 
+  Import took 0.126241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/BoneWorks/Prefabs/RightKneeCap.prefab
+  artifactKey: Guid(d35e12dddf59b914bb54be365f551ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightKneeCap.prefab using Guid(d35e12dddf59b914bb54be365f551ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b4eb08bd717772e9086d26206062327') in 0.099628 seconds 
+  Import took 0.102225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFoot.prefab
+  artifactKey: Guid(eff903003ba144643bfd5329c0f8f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFoot.prefab using Guid(eff903003ba144643bfd5329c0f8f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be8360129048314f3bc21553bc2d273') in 0.082108 seconds 
+  Import took 0.084728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftRadiusandUlna_LOD0.prefab
+  artifactKey: Guid(5a9c1c123b2271e41a44190db0a95d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftRadiusandUlna_LOD0.prefab using Guid(5a9c1c123b2271e41a44190db0a95d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a3aa8ee63c8e3b885af9576a4da329') in 0.085572 seconds 
+  Import took 0.088365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/BoneWorks/Prefabs/Ribcage.prefab
+  artifactKey: Guid(5740ca52b1358b14388d9b4d29ba5e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Ribcage.prefab using Guid(5740ca52b1358b14388d9b4d29ba5e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684dfbc1f2e47bb1487c6ef3644a44ed') in 0.082513 seconds 
+  Import took 0.085247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/BoneWorks/Prefabs/RightShoulderBlade.prefab
+  artifactKey: Guid(c271ffda4609ea749b32d582b0d8d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightShoulderBlade.prefab using Guid(c271ffda4609ea749b32d582b0d8d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1bb55dc0c08e719631f01220615c56d') in 0.076710 seconds 
+  Import took 0.079348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/BoneWorks/Prefabs/Pelvis.prefab
+  artifactKey: Guid(9a923e745172b1145ad186766ad25b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Pelvis.prefab using Guid(9a923e745172b1145ad186766ad25b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309713994b33c2867953a63d3ba20815') in 0.072304 seconds 
+  Import took 0.074965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftShoulderBlade.prefab
+  artifactKey: Guid(69e32bbba81e30148b6d4fa3b0a67e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftShoulderBlade.prefab using Guid(69e32bbba81e30148b6d4fa3b0a67e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12d4e2e2afcee5da6911788c5e6df56') in 0.071772 seconds 
+  Import took 0.074995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFibulaandTibia.prefab
+  artifactKey: Guid(d0ed84fa291f7454d92b48b00ca322e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFibulaandTibia.prefab using Guid(d0ed84fa291f7454d92b48b00ca322e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f87248aa752d4fd28d8c64f7439a266') in 0.058249 seconds 
+  Import took 0.061173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFemur.prefab
+  artifactKey: Guid(ae68f3c2a15788648a3b16efa9cd573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFemur.prefab using Guid(ae68f3c2a15788648a3b16efa9cd573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8811149f9fabb8c61c08cb8d82f3ab') in 0.056871 seconds 
+  Import took 0.059771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.877684 seconds.
+  path: Assets/Scripts/Interactions/Interactables
+  artifactKey: Guid(b64b7fda64821934087ebf4257dc0a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Interactions/Interactables using Guid(b64b7fda64821934087ebf4257dc0a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf65e59bf92b27ab59c31e781464a2f3') in 0.025218 seconds 
+  Import took 0.028139 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003683 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Domain Reload Profiling:
+	ReloadAssembly (905ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (725ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (276ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2118 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.6 MB.
+System memory in use after: 94.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2586.
+Total: 2.406000 ms (FindLiveObjects: 0.173100 ms CreateObjectMapping: 0.070300 ms MarkObjects: 2.149400 ms  DeleteObjects: 0.012500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 22.708146 seconds.
+  path: Assets/BoneWorks/Scripts
+  artifactKey: Guid(c8478eefb874aaa4488138f0d55cd639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Scripts using Guid(c8478eefb874aaa4488138f0d55cd639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004d2b6842e45de48a60c6dbd181bcd3') in 0.028326 seconds 
+  Import took 0.031244 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.877 seconds
+Domain Reload Profiling:
+	ReloadAssembly (877ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (710ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (232ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (278ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.5 MB.
+System memory in use after: 94.6 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2585.
+Total: 2.529700 ms (FindLiveObjects: 0.198100 ms CreateObjectMapping: 0.071500 ms MarkObjects: 2.244000 ms  DeleteObjects: 0.015200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.076036 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.873 seconds
+Domain Reload Profiling:
+	ReloadAssembly (873ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (718ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (236ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2118 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.6 MB.
+System memory in use after: 94.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2592.
+Total: 2.529300 ms (FindLiveObjects: 0.200800 ms CreateObjectMapping: 0.079200 ms MarkObjects: 2.233400 ms  DeleteObjects: 0.014600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 328.766899 seconds.
+  path: Assets/BoneWorks/Prefabs/BottomJaw.prefab
+  artifactKey: Guid(af58fdb243663e849986816b052663bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/BottomJaw.prefab using Guid(af58fdb243663e849986816b052663bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334dbbdb7bde7a867301e5aacf00a5d3') in 0.109993 seconds 
+  Import took 0.113092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.255900 seconds.
+  path: Assets/BoneWorks/Prefabs/BottomJaw.prefab
+  artifactKey: Guid(af58fdb243663e849986816b052663bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/BottomJaw.prefab using Guid(af58fdb243663e849986816b052663bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f2782737ac71fc80c0364b1668d2f7') in 0.059738 seconds 
+  Import took 0.063369 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 39.75 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.85 ms.
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 54.3 MB.
+System memory in use after: 54.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2593.
+Total: 2.969800 ms (FindLiveObjects: 0.187400 ms CreateObjectMapping: 0.076400 ms MarkObjects: 2.694100 ms  DeleteObjects: 0.011200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 27.885938 seconds.
+  path: Assets/StreamingAssets/AssetBundles/bones.manifest
+  artifactKey: Guid(52602c45fcb3729468c96fd49fc94cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/AssetBundles/bones.manifest using Guid(52602c45fcb3729468c96fd49fc94cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0efe0587396a1f6bd91096eede1bc9') in 0.009082 seconds 
+  Import took 0.012054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.524638 seconds.
+  path: Assets/StreamingAssets/AssetBundles/bones
+  artifactKey: Guid(e68b64f142e05c4488b2fe6e5e2519bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/AssetBundles/bones using Guid(e68b64f142e05c4488b2fe6e5e2519bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61158b5def85bf902105d69a6cc0e9c') in 0.007175 seconds 
+  Import took 0.010805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.040019 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftCollarBone.prefab
+  artifactKey: Guid(b1d896b33b0a49849a031d672f6e69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftCollarBone.prefab using Guid(b1d896b33b0a49849a031d672f6e69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a628235177a989c60f7cded4c4b60c8') in 0.061434 seconds 
+  Import took 0.065587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.243223 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftCollarBone.prefab
+  artifactKey: Guid(b1d896b33b0a49849a031d672f6e69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftCollarBone.prefab using Guid(b1d896b33b0a49849a031d672f6e69b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c6614d27f996c69680c392b76eb2fd') in 0.060824 seconds 
+  Import took 0.064404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1096.427705 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFemur.prefab
+  artifactKey: Guid(ae68f3c2a15788648a3b16efa9cd573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFemur.prefab using Guid(ae68f3c2a15788648a3b16efa9cd573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c59199dccab0bc407ff6bda8b90ee1a') in 0.063631 seconds 
+  Import took 0.067512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.645308 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFibulaandTibia.prefab
+  artifactKey: Guid(9eacb13af908f3d4f9b03f7bdac89999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFibulaandTibia.prefab using Guid(9eacb13af908f3d4f9b03f7bdac89999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1326331511b14dfedaffe16bf7dc7764') in 0.057137 seconds 
+  Import took 0.060586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.259851 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFibulaandTibia.prefab
+  artifactKey: Guid(9eacb13af908f3d4f9b03f7bdac89999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFibulaandTibia.prefab using Guid(9eacb13af908f3d4f9b03f7bdac89999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '773e27dfff32cfe0336eb3e9c2043a8b') in 0.012884 seconds 
+  Import took 0.016200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.234094 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFoot.prefab
+  artifactKey: Guid(03c3c472dee678f4c82a1b6c8224bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFoot.prefab using Guid(03c3c472dee678f4c82a1b6c8224bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a29ccef0be2ad91784f04f0b01a69e8') in 0.015386 seconds 
+  Import took 0.018895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.828155 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftFoot.prefab
+  artifactKey: Guid(03c3c472dee678f4c82a1b6c8224bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftFoot.prefab using Guid(03c3c472dee678f4c82a1b6c8224bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a05f4c833130a8a0d96dc8c09825f0e') in 0.055822 seconds 
+  Import took 0.059579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.234727 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftHand.prefab
+  artifactKey: Guid(6771838e7bb0f5847822664923b181ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftHand.prefab using Guid(6771838e7bb0f5847822664923b181ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8a773cf73491f590fd617ea6ff9b4d') in 0.107124 seconds 
+  Import took 0.110230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.352863 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftHand.prefab
+  artifactKey: Guid(6771838e7bb0f5847822664923b181ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftHand.prefab using Guid(6771838e7bb0f5847822664923b181ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25adfd8d233a2f03b8aab25a23f3fa4') in 0.059722 seconds 
+  Import took 0.063267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.568184 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftHumerus.prefab
+  artifactKey: Guid(8568839f327337e41b04f191998ec617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftHumerus.prefab using Guid(8568839f327337e41b04f191998ec617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc5bd74714dcec639d117d38a4b2079') in 0.060884 seconds 
+  Import took 0.064258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.026230 seconds.
+  path: Assets/BoneWorks/Prefabs/RightKneeCap.prefab
+  artifactKey: Guid(d35e12dddf59b914bb54be365f551ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightKneeCap.prefab using Guid(d35e12dddf59b914bb54be365f551ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7ecf145d1ab73dcb318d0ac0f39947') in 0.063579 seconds 
+  Import took 0.066859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.842726 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftRadiusandUlna_LOD0.prefab
+  artifactKey: Guid(5a9c1c123b2271e41a44190db0a95d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftRadiusandUlna_LOD0.prefab using Guid(5a9c1c123b2271e41a44190db0a95d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a6eb81ad743f8f03015c7b41c8dbcc') in 0.068311 seconds 
+  Import took 0.071488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.303512 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftRadiusandUlna_LOD0.prefab
+  artifactKey: Guid(5a9c1c123b2271e41a44190db0a95d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftRadiusandUlna_LOD0.prefab using Guid(5a9c1c123b2271e41a44190db0a95d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ddad904a19394eb93130413fbf53f84') in 0.100146 seconds 
+  Import took 0.103818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.495080 seconds.
+  path: Assets/BoneWorks/Prefabs/LeftShoulderBlade.prefab
+  artifactKey: Guid(69e32bbba81e30148b6d4fa3b0a67e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/LeftShoulderBlade.prefab using Guid(69e32bbba81e30148b6d4fa3b0a67e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9431cb27059667ec202c88026a9b105d') in 0.060793 seconds 
+  Import took 0.064519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.621774 seconds.
+  path: Assets/BoneWorks/Prefabs/Pelvis.prefab
+  artifactKey: Guid(9a923e745172b1145ad186766ad25b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Pelvis.prefab using Guid(9a923e745172b1145ad186766ad25b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2813d0ac904cf2cb93b9412ee3ff09') in 0.015865 seconds 
+  Import took 0.019447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.327272 seconds.
+  path: Assets/BoneWorks/Prefabs/Pelvis.prefab
+  artifactKey: Guid(9a923e745172b1145ad186766ad25b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Pelvis.prefab using Guid(9a923e745172b1145ad186766ad25b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e21b9378640a2d1bb1ce68aa0317c3') in 0.070900 seconds 
+  Import took 0.073986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.059371 seconds.
+  path: Assets/BoneWorks/Prefabs/Ribcage.prefab
+  artifactKey: Guid(5740ca52b1358b14388d9b4d29ba5e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Ribcage.prefab using Guid(5740ca52b1358b14388d9b4d29ba5e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3c9bbbd8fa034d32109c5593d65110b') in 0.058896 seconds 
+  Import took 0.062091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.039283 seconds.
+  path: Assets/BoneWorks/Prefabs/Ribcage.prefab
+  artifactKey: Guid(5740ca52b1358b14388d9b4d29ba5e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Ribcage.prefab using Guid(5740ca52b1358b14388d9b4d29ba5e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8946b080a95041e1ebe8b075bf9be8b9') in 0.018551 seconds 
+  Import took 0.021874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.698404 seconds.
+  path: Assets/BoneWorks/Prefabs/RightCollarBone.prefab
+  artifactKey: Guid(f356ef1c53bdacc44a74006c73283e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightCollarBone.prefab using Guid(f356ef1c53bdacc44a74006c73283e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd46b30f5f830e7078aba288bb97e36a') in 0.058437 seconds 
+  Import took 0.061905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.664798 seconds.
+  path: Assets/BoneWorks/Prefabs/RightCollarBone.prefab
+  artifactKey: Guid(f356ef1c53bdacc44a74006c73283e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightCollarBone.prefab using Guid(f356ef1c53bdacc44a74006c73283e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7cd496ee90381928bfbcd945db56d7') in 0.060662 seconds 
+  Import took 0.063929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.886051 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFemur.prefab
+  artifactKey: Guid(c5e7012d3f9d66e4d8896b143ee73309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFemur.prefab using Guid(c5e7012d3f9d66e4d8896b143ee73309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3faca6aceda94a3f047a1af45bbb1741') in 0.056865 seconds 
+  Import took 0.059990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.556095 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFemur.prefab
+  artifactKey: Guid(c5e7012d3f9d66e4d8896b143ee73309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFemur.prefab using Guid(c5e7012d3f9d66e4d8896b143ee73309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e794b23d368f20386dfb692d43a0a784') in 0.050995 seconds 
+  Import took 0.054030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.717088 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFibulaandTibia.prefab
+  artifactKey: Guid(d0ed84fa291f7454d92b48b00ca322e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFibulaandTibia.prefab using Guid(d0ed84fa291f7454d92b48b00ca322e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af58ac060bb0bb5b83bf0388c571eee') in 0.014110 seconds 
+  Import took 0.017291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.098128 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFibulaandTibia.prefab
+  artifactKey: Guid(d0ed84fa291f7454d92b48b00ca322e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFibulaandTibia.prefab using Guid(d0ed84fa291f7454d92b48b00ca322e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac07d86fdb0e0c006597ac402b47346d') in 0.057677 seconds 
+  Import took 0.061102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.422894 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFoot.prefab
+  artifactKey: Guid(eff903003ba144643bfd5329c0f8f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFoot.prefab using Guid(eff903003ba144643bfd5329c0f8f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e89107c2134e6046898df34e8a0e3a') in 0.013667 seconds 
+  Import took 0.017315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.981403 seconds.
+  path: Assets/BoneWorks/Prefabs/RightFoot.prefab
+  artifactKey: Guid(eff903003ba144643bfd5329c0f8f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightFoot.prefab using Guid(eff903003ba144643bfd5329c0f8f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '539d28201aeecd19f9cfafe04c3ab8f0') in 0.022196 seconds 
+  Import took 0.025290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.255155 seconds.
+  path: Assets/BoneWorks/Prefabs/RightHand.prefab
+  artifactKey: Guid(4aea2cdf9943e234aad2eb09e8685d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightHand.prefab using Guid(4aea2cdf9943e234aad2eb09e8685d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c8d13adbc93d5070faac9028e90611') in 0.130973 seconds 
+  Import took 0.134195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.099778 seconds.
+  path: Assets/BoneWorks/Prefabs/RightHand.prefab
+  artifactKey: Guid(4aea2cdf9943e234aad2eb09e8685d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightHand.prefab using Guid(4aea2cdf9943e234aad2eb09e8685d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feac729edbd2993167cea1cca0de70e0') in 0.015529 seconds 
+  Import took 0.018555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.210075 seconds.
+  path: Assets/BoneWorks/Prefabs/RightHumerus.prefab
+  artifactKey: Guid(e315318c70419c8478fb6af40665b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightHumerus.prefab using Guid(e315318c70419c8478fb6af40665b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bdeb42321e1081dcae553cc2e80045') in 0.057002 seconds 
+  Import took 0.060134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.670778 seconds.
+  path: Assets/BoneWorks/Prefabs/RightHumerus.prefab
+  artifactKey: Guid(e315318c70419c8478fb6af40665b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightHumerus.prefab using Guid(e315318c70419c8478fb6af40665b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7aed46cda7b2f48c042a4a3ec73b6af') in 0.015473 seconds 
+  Import took 0.018651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.018729 seconds.
+  path: Assets/BoneWorks/Prefabs/RightRadiusandUlna.prefab
+  artifactKey: Guid(1f18a37e336d0db4c9a9dbcb7ee7ed4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightRadiusandUlna.prefab using Guid(1f18a37e336d0db4c9a9dbcb7ee7ed4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657307f97b02217fddaf1ed9723d71ee') in 0.057644 seconds 
+  Import took 0.060750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.490940 seconds.
+  path: Assets/BoneWorks/Prefabs/RightRadiusandUlna.prefab
+  artifactKey: Guid(1f18a37e336d0db4c9a9dbcb7ee7ed4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightRadiusandUlna.prefab using Guid(1f18a37e336d0db4c9a9dbcb7ee7ed4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e4a9d638d5611f2d1863256b06b524') in 0.012396 seconds 
+  Import took 0.015422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.479719 seconds.
+  path: Assets/BoneWorks/Prefabs/RightShoulderBlade.prefab
+  artifactKey: Guid(c271ffda4609ea749b32d582b0d8d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightShoulderBlade.prefab using Guid(c271ffda4609ea749b32d582b0d8d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0e0789d1542b67e3e6db31825d04ae') in 0.056692 seconds 
+  Import took 0.059741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.550938 seconds.
+  path: Assets/BoneWorks/Prefabs/RightShoulderBlade.prefab
+  artifactKey: Guid(c271ffda4609ea749b32d582b0d8d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/RightShoulderBlade.prefab using Guid(c271ffda4609ea749b32d582b0d8d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4ceda8b37769967e49b59ab513b86d') in 0.057465 seconds 
+  Import took 0.060636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.097374 seconds.
+  path: Assets/BoneWorks/Prefabs/Skull.prefab
+  artifactKey: Guid(43cbb7dbc6e9e5d459f6c978bcf24cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Skull.prefab using Guid(43cbb7dbc6e9e5d459f6c978bcf24cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac13dd98856e49bc2e58f3e8b25daaf') in 0.108711 seconds 
+  Import took 0.112368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.723363 seconds.
+  path: Assets/BoneWorks/Prefabs/Skull.prefab
+  artifactKey: Guid(43cbb7dbc6e9e5d459f6c978bcf24cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Skull.prefab using Guid(43cbb7dbc6e9e5d459f6c978bcf24cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3cc7ba54451f6db0bcdce6551b278e') in 0.014189 seconds 
+  Import took 0.017290 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.132809 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in G:\Game Design\Konnect-VR\Konnect-VR-AssetBundler\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <97ba64834c8f4edc84e3d8e30b04f122>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.923 seconds
+Domain Reload Profiling:
+	ReloadAssembly (924ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (744ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (279ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2119 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.9 MB.
+System memory in use after: 95.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2597.
+Total: 2.471000 ms (FindLiveObjects: 0.197000 ms CreateObjectMapping: 0.070100 ms MarkObjects: 2.190700 ms  DeleteObjects: 0.012500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 144.183055 seconds.
+  path: Assets/BoneWorks/Prefabs/Spine.prefab
+  artifactKey: Guid(c4d252040b5172f459a8dad951113a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Spine.prefab using Guid(c4d252040b5172f459a8dad951113a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3eb2e0e75b2e2d304979949316f64da') in 0.125888 seconds 
+  Import took 0.129554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.659710 seconds.
+  path: Assets/BoneWorks/Prefabs/Tailbone.prefab
+  artifactKey: Guid(0b4ba72c45b3a3c458a74c03b3ba5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Tailbone.prefab using Guid(0b4ba72c45b3a3c458a74c03b3ba5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff57a74a2e46cbc82d13fcab98777afc') in 0.074758 seconds 
+  Import took 0.077774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.871842 seconds.
+  path: Assets/BoneWorks/Prefabs/Tailbone.prefab
+  artifactKey: Guid(0b4ba72c45b3a3c458a74c03b3ba5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneWorks/Prefabs/Tailbone.prefab using Guid(0b4ba72c45b3a3c458a74c03b3ba5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012572b355cda6c687b70765e86f267c') in 0.062596 seconds 
+  Import took 0.065746 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

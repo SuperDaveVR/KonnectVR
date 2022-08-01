@@ -1,0 +1,285 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &936885243815468857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3122220284530384822}
+  m_Layer: 0
+  m_Name: NetworkEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3122220284530384822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936885243815468857}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.025000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3420607419794497073}
+  - {fileID: 8763894345719497436}
+  m_Father: {fileID: 8318781355362836780}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3748208847232860350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8318781354101831372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65fbed0b0ac45a4b9baf7f54b16b541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformSpace: 0
+  interpolate: 1
+  interpolationFactor: 0.5
+  snapThreshold: 0.5
+  usePrediction: 1
+  velocitySource: 1
+  log: 0
+--- !u!114 &4972680526010129105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8318781354101831372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da16e26f6b876c448abb92766c36d386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameResolution: 10
+--- !u!1 &4013232103369541553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8763894345719497436}
+  - component: {fileID: 3338455103565308241}
+  m_Layer: 0
+  m_Name: SliderMin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8763894345719497436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013232103369541553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3122220284530384822}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3338455103565308241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013232103369541553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1041102285892430635, guid: a6bcd5e7913b2d741a4ac10d07907eca, type: 3}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: stopIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &6333953836694586874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3420607419794497073}
+  - component: {fileID: 1416225892042275853}
+  m_Layer: 0
+  m_Name: SliderMax
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3420607419794497073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6333953836694586874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3122220284530384822}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1416225892042275853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6333953836694586874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8a3609c35a4c34a9ade8f6cbc7902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInvoke:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1041102285892430635, guid: a6bcd5e7913b2d741a4ac10d07907eca, type: 3}
+        m_TargetAssemblyTypeName: KonnectVR.Interactions.Interactable, Assembly-CSharp
+        m_MethodName: startIndependentInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &975163692399224829
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 286760558855146710, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: onInteractionStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 286760558855146710, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: onInteractionStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286760558855146710, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: onInteractionStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177528320312, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: OnSliderMax.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1416225892042275853}
+    - target: {fileID: 9149702177528320312, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: OnSliderMax.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177528320312, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: OnSliderMax.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177528320312, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: OnSliderlMin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3338455103565308241}
+    - target: {fileID: 9149702177528320312, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: OnSliderlMin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177528320312, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: OnSliderlMin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KonnectVR.Networking.NetworkEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529808, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_Name
+      value: Networked Slider Container Physics
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+--- !u!4 &8318781355362836780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9149702177757529809, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+  m_PrefabInstance: {fileID: 975163692399224829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8318781354101831372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9149702177528320305, guid: 9debafb784ce9db4eae879e2a7d40fb9, type: 3}
+  m_PrefabInstance: {fileID: 975163692399224829}
+  m_PrefabAsset: {fileID: 0}
