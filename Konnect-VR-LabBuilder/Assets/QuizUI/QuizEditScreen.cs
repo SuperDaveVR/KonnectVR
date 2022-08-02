@@ -40,7 +40,6 @@ public class QuizEditScreen : QuizScreen
         foreach (QuizQuestion question in quizObj.QuestionsList) {
             newQuestion = Instantiate(questionPrefab, base.ContentField.transform);
             newQuestion.GetComponent<QuizEditorQuestion>().BuildMe(question, this); //Create a component in your Answer prefab and include a public BuildMe script that takes data from QuizQuestion.cs
-            //TODO: Enter your code for setting the edit button to target this question
         }
     }
 
