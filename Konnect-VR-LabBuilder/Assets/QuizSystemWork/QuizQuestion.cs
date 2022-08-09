@@ -9,12 +9,26 @@ using UnityEngine;
 [System.Serializable]
 public class QuizQuestion
 {
+    public enum QuestionTypes { MultipleChoice, ObjectSelection, Placement, Sequence }
+
+    [SerializeField] private QuestionTypes questionType;
     [SerializeField] private string questionText;
     [SerializeField] private bool chooseMultiple;
     [SerializeField] private bool highlight;
     [SerializeField] private string highlightedObject;
-    [SerializeField] private List<QuizAnswer> answers;
+    [SerializeField, SerializeReference] private List<QuizAnswer> answers;
 
+    [SerializeField] private int pointValue;
+
+    public string Type
+    {
+        get { return questionType.ToString(); }
+        set
+        {
+            if (Enum.IsDefined(typeof(QuestionTypes), value))
+                questionType = (QuestionTypes)Enum.Parse(typeof(QuestionTypes), value);
+        }
+    }
     public string Text { 
         get { return questionText; } 
         set { questionText = value; }
@@ -56,11 +70,18 @@ public class QuizQuestion
             string correctStr = "";
             foreach (QuizAnswer answer in answers)
             {
-                if (answer.IsCorrect)
-                    correctStr += answer.AnswerText + "|";
+                /*if (answer.IsCorrect)
+                    correctStr += answer.AnswerText + "|";*/
+                correctStr += answer.CorrectTextValue();
             }
             return correctStr.Substring(0, correctStr.Length - 1);
         }
+    }
+
+    public int PointValue
+    {
+        get;
+        set;
     }
 
     public QuizQuestion()
@@ -98,7 +119,7 @@ public class QuizQuestion
 
         foreach (QuizAnswer answer in answers)
         {
-            if (answer.IsCorrect == answer.IsSelected)
+            if (answer.IsCorrect)
             {
                 amountCorrect++;
             }
@@ -115,11 +136,40 @@ public class QuizQuestion
 
     public void BuildFromExcel(DataRow question)
     {
-        questionText = question[0].ToString();
-        chooseMultiple = StrToBool(question[1].ToString());
-        highlight = StrToBool(question[2].ToString());
-        SetHighlightObject(question[3].ToString());
-        answers = BuildAnswersFromExcel(question[4].ToString(), question[5].ToString());
+        questionType = SetQuestionType(question[0].ToString());
+        questionText = question[1].ToString();
+        chooseMultiple = StrToBool(question[2].ToString());
+        highlight = StrToBool(question[3].ToString());
+        SetHighlightObject(question[4].ToString());
+        answers = BuildAnswersFromExcel(question[5].ToString(), question[6].ToString());
+        pointValue = int.Parse(question[7].ToString());
+    }
+
+    private QuestionTypes SetQuestionType(string questionTypeStr)
+    {
+        QuestionTypes retType;
+
+        string trimmed = String.Concat(questionTypeStr.Where(c => !Char.IsWhiteSpace(c)));
+        switch (trimmed.ToLower())
+        {
+            case "multiplechoice":
+                retType = QuestionTypes.MultipleChoice;
+                break;
+            case "objectselection":
+                retType = QuestionTypes.ObjectSelection;
+                break;
+            case "placement":
+                retType = QuestionTypes.Placement;
+                break;
+            case "sequence":
+                retType = QuestionTypes.Sequence;
+                break;
+            default:
+                retType = QuestionTypes.MultipleChoice;
+                break;
+        }
+
+        return retType;
     }
 
     private bool StrToBool(string boolString)
@@ -135,39 +185,24 @@ public class QuizQuestion
 
     private List<QuizAnswer> BuildAnswersFromExcel(string answersStr, string correctAnswersStr)
     {
-        List<QuizAnswer> listOfAnswers = new List<QuizAnswer>();
+        //List<QuizAnswer> listOfAnswers = new List<QuizAnswer>();
         string[] answersArray = answersStr.Split('|');
         string[] correctAnswersArray = correctAnswersStr.Split('|');
 
-
-        for (int i = 0; i < answersArray.Length; i++)
-        {
-            //Remove starting and ending whitespace
-            answersArray[i] = answersArray[i].TrimStart(' ');
-            answersArray[i] = answersArray[i].TrimEnd(' ');
-        }
-
-        for (int i = 0; i < correctAnswersArray.Length; i++)
-        {
-            //Remove starting and ending whitespace
-            correctAnswersArray[i] = correctAnswersArray[i].TrimStart(' ');
-            correctAnswersArray[i] = correctAnswersArray[i].TrimEnd(' ');
-        }
-
-        foreach (string answer in answersArray)
-        {
-            bool isCorrect = false;
-
-            if (correctAnswersArray.Contains(answer))
-            {
-                isCorrect = true;
-            }
-
-            QuizAnswer quizAnswer = new QuizAnswer(answer, isCorrect);
-            listOfAnswers.Add(quizAnswer);
-        }
+        List<QuizAnswer> listOfAnswers = QuizAnswerTypeHandler.BuildAnswersOfType(questionType, answersArray, correctAnswersArray);
 
         return listOfAnswers;
+    }
+
+    public void AddDefaultAnswer(string answerText, string? correctText = "false")
+    {
+        answers.Add(QuizAnswerTypeHandler.BuildAnswerOfType(questionType, answerText, correctText));
+    }
+
+    public void ChangeQuizType(QuestionTypes type)
+    {
+        questionType = type;
+        answers = QuizAnswerTypeHandler.SwapTypes(answers, type);
     }
 
     public void shuffleAnswers(System.Random random)

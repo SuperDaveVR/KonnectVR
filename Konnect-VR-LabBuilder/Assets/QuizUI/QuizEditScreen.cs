@@ -8,28 +8,10 @@ public class QuizEditScreen : QuizScreen
     //Drag the prefab for questions here
     [SerializeField] private GameObject questionPrefab;
     [SerializeField] private TMPro.TMP_InputField QuizTitle;
-    [SerializeField] private TMPro.TMP_Dropdown QuizType;
 
     private void LoadTitle()
     {
         QuizTitle.text = quizObj.Name;
-    }
-
-    private void LoadOptions()
-    {
-        QuizType.ClearOptions();
-
-        List<TMPro.TMP_Dropdown.OptionData> OptionList = new List<TMPro.TMP_Dropdown.OptionData>();
-        Type enumType = typeof(QuizObj.QuizTypes);
-
-        for (int i = 0; i < Enum.GetNames(enumType).Length; i++)//Populate new Options
-        {
-            OptionList.Add(new TMPro.TMP_Dropdown.OptionData(Enum.GetName(enumType, i)));
-        }
-
-        QuizType.AddOptions(OptionList);
-
-        QuizType.value = (int)Enum.Parse(enumType, quizObj.Type); 
     }
 
     private void LoadQuestions()
@@ -49,7 +31,6 @@ public class QuizEditScreen : QuizScreen
         base.Clear();
         quizObj = activeQuiz.GetComponent<QuizObj>();
         LoadTitle();
-        LoadOptions();
         LoadQuestions();
         base.Reload();
     }
@@ -63,11 +44,8 @@ public class QuizEditScreen : QuizScreen
     public void AddQuestionButton()
     {
         QuizQuestion question = new QuizQuestion("New Question");
-        QuizAnswer answerDefault1 = new QuizAnswer("Option #1", true);
-        QuizAnswer answerDefault2 = new QuizAnswer("Option #2", false);
-
-        question.Answers.Add(answerDefault1);
-        question.Answers.Add(answerDefault2);
+        question.AddDefaultAnswer("Option #1", "true");
+        question.AddDefaultAnswer("Option #2");
 
         quizObj.QuestionsList.Add(question);
         Reload();
@@ -97,11 +75,5 @@ public class QuizEditScreen : QuizScreen
     public void OnTitleChanged(string value)
     {
         quizObj.Name = value;
-    }
-
-    public void OnDropDownChanged(Int32 value)
-    {
-        QuizObj.QuizTypes enumValue = (QuizObj.QuizTypes)value;
-        quizObj.Type = enumValue.ToString();
     }
 }

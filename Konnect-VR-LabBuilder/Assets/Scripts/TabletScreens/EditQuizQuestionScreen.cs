@@ -23,9 +23,7 @@ public class EditQuizQuestionScreen : QuizQuestionScreen
 
     public void AddAnswerButton()
     {
-        QuizAnswer answer = new QuizAnswer("New Option", false);
-
-        ActiveQuestion.Answers.Add(answer);
+        ActiveQuestion.AddDefaultAnswer("New Option");
 
         Reload();
     }

@@ -8,10 +8,8 @@ using UnityEngine;
 [System.Serializable]
 public class QuizObj: MonoBehaviour
 {
-    public enum QuizTypes { MultipleChoice, ObjectSelection, Placement }
 
     [SerializeField] private string quizName;
-    [SerializeField] private QuizTypes quizType;
     [SerializeField] private List<QuizQuestion> questions;
     [SerializeField] private int score;
     [SerializeField] private bool randomizeQuestionOrder;
@@ -21,13 +19,7 @@ public class QuizObj: MonoBehaviour
         get { return quizName; } 
         set { quizName = value; }
     }
-    public string Type { get { return quizType.ToString(); }
-        set
-        {
-            if (Enum.IsDefined(typeof(QuizTypes), value))
-                quizType = (QuizTypes)Enum.Parse(typeof(QuizTypes), value);
-        }
-    }
+
     public List<QuizQuestion> QuestionsList { get { return questions; } }
     public int Score { get { return score; } }
     public bool RandomizeQuestions { get { return randomizeQuestionOrder; } }
@@ -37,7 +29,6 @@ public class QuizObj: MonoBehaviour
     public void LoadFromSaveData(QuizSaveData quizObj)
     {
         quizName = quizObj.quizName;
-        quizType = (QuizTypes)System.Enum.Parse(typeof(QuizTypes), quizObj.quizType);
         questions = quizObj.questions;
         randomizeQuestionOrder = quizObj.randomizeQuestionOrder;
         randomizeAnswerOrder = quizObj.randomizeAnswerOrder;
@@ -92,9 +83,8 @@ public class QuizObj: MonoBehaviour
     private void SetExcelSettings(DataTable settingTable)
     {
         quizName = settingTable.Rows[0][settingTable.Columns[0]].ToString();
-        quizType = SetQuizType(settingTable.Rows[0][settingTable.Columns[1]].ToString());
-        randomizeQuestionOrder = StrToBool(settingTable.Rows[0][settingTable.Columns[2]].ToString());
-        randomizeAnswerOrder = StrToBool(settingTable.Rows[0][settingTable.Columns[3]].ToString());
+        randomizeQuestionOrder = StrToBool(settingTable.Rows[0][settingTable.Columns[1]].ToString());
+        randomizeAnswerOrder = StrToBool(settingTable.Rows[0][settingTable.Columns[2]].ToString());
     }
 
     private void SetExcelQuestions(DataTable questionTable)
@@ -107,30 +97,6 @@ public class QuizObj: MonoBehaviour
             question.BuildFromExcel(questionTable.Rows[i]);
             questions.Add(question);
         }
-    }
-
-    private QuizTypes SetQuizType(string quizTypeStr)
-    {
-        QuizTypes retType;
-
-        string trimmed = String.Concat(quizTypeStr.Where(c => !Char.IsWhiteSpace(c)));
-        switch (trimmed.ToLower())
-        {
-            case "multiplechoice":
-                retType = QuizTypes.MultipleChoice;
-                break;
-            case "objectselection":
-                retType = QuizTypes.ObjectSelection;
-                break;
-            case "placement":
-                retType = QuizTypes.Placement;
-                break;
-            default:
-                retType = QuizTypes.MultipleChoice;
-                break;
-        }
-
-        return retType;
     }
 
     private bool StrToBool(string boolString)
@@ -154,7 +120,6 @@ public class QuizObj: MonoBehaviour
     {
         QuizSaveData quizSaveData = new QuizSaveData();
         quizSaveData.quizName = Name;
-        quizSaveData.quizType = Type;
         quizSaveData.questions = QuestionsList;
         quizSaveData.randomizeQuestionOrder = RandomizeQuestions;
         quizSaveData.randomizeAnswerOrder = RandomizeAnswers;

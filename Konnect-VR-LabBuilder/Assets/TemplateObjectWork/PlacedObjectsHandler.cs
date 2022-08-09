@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlacedObjectsHandler : MonoBehaviour
@@ -97,8 +98,20 @@ public class PlacedObjectsHandler : MonoBehaviour
     public bool CheckObjectExists(int index)
     {
         bool doesExist = true;
-        GameObject PositionObject = PlacedObjects[index];
-        if (PositionObject == null)
+        GameObject SearchObject = PlacedObjects[index];
+        if (SearchObject == null)
+        {
+            doesExist = false;
+        }
+
+        return doesExist;
+    }
+
+    public bool CheckObjectExists(string name)
+    {
+        bool doesExist = true;
+        GameObject SearchObject = PlacedObjects.Where(x => x.name == name).SingleOrDefault();
+        if (SearchObject == null)
         {
             doesExist = false;
         }

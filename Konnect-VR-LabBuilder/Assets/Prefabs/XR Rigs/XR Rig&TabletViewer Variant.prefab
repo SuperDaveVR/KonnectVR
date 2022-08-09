@@ -159,6 +159,10 @@ PrefabInstance:
       propertyPath: m_Padding.z
       value: -8
       objectReference: {fileID: 0}
+    - target: {fileID: 5149923521694163009, guid: f038c6c71457b08449b28e0b3b08641d, type: 3}
+      propertyPath: m_Delegates.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5631116861065392807, guid: f038c6c71457b08449b28e0b3b08641d, type: 3}
       propertyPath: XRRig
       value: 

@@ -1,6 +1,6 @@
-Quiz Name,Quiz Type,Randomize Question Order,Randomize Answer Order,,
-Testing Quiz,MultipleChoice,TRUE,FALSE,,
-Questions,,,,,
-Question,Choose Multiple?,Highlight?,Highlighted Object,Options,Correct Answer
-What about this?,FALSE,FALSE,,Yes|No|Maybe,Yes|No
-Does this work?,FALSE,FALSE,,Yes|No|Maybe,Yes
+Quiz Name,Randomize Question Order,Randomize Answer Order,,,,,
+Testing Quiz,TRUE,FALSE,,,,,
+Questions,,,,,,,
+QuestionType,Question,Choose Multiple?,Highlight?,Highlighted Object,Options,Correct Answer,Point Value
+MultipleChoice,What about this?,TRUE,FALSE,,Yes|No|Maybe,Yes|No,1
+MultipleChoice,Does this work?,FALSE,FALSE,,Yes|No|Maybe,Yes,1

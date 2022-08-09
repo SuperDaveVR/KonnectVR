@@ -9,23 +9,35 @@ public class QuizTakingScreen : QuizScreen
     private QuizQuestion activeQuestion;
 
     [SerializeField] private TMPro.TMP_Text TitleText;
+    [SerializeField] private AssessmentHandler assessmentHandler;
 
     //Prefabs for each quiz type
-    [SerializeField] private GameObject MultipleChoicePrefab;
-    [SerializeField] private GameObject PlacementPrefab;
-    [SerializeField] private GameObject SelectionPrefab;
+    [SerializeField] private QuizAnswerPrefabLoader QuizPrefabLoader;
 
-    private int currentQuestionNum = 0;
+    private int CurrentQuestionNum = 0;
+    private int TotalQuestionsCount;
+
+    [SerializeField] private TMPro.TMP_Text QuestionProgress;
+
+    [SerializeField] private TMPro.TMP_Text AnswerProgress;
+
+    private void Awake()
+    {
+        quizObj = activeQuiz.GetComponent<QuizObj>();
+
+        LoadTitle();
+        QuestionCount();
+        assessmentHandler.Setup(quizObj);
+    }
 
     protected override void Reload()
     {
         //Base Clear
         base.Clear();
-        
-        quizObj = activeQuiz.GetComponent<QuizObj>();
 
         //Enter additional methods you want to have run on reload here. 
-        LoadTitle();
+        QuestionProgressTextUpdate();
+        AnswerProgressTextUpdate();
         LoadQuestion();
 
         //Base Reload
@@ -41,11 +53,11 @@ public class QuizTakingScreen : QuizScreen
     private void LoadQuestion()
     {
         Debug.Log("Loading " + base.quizObj.Name);
-        activeQuestion = base.quizObj.GetQuestion(currentQuestionNum);
+        activeQuestion = base.quizObj.GetQuestion(CurrentQuestionNum);
 
         GameObject newQuestion;
 
-        GameObject questionPrefab = GetQuizTypePrefab();
+        GameObject questionPrefab = GetQuestionTypePrefab();
 
         if (questionPrefab != null) { 
             newQuestion = Instantiate(questionPrefab, base.ContentField.transform);
@@ -53,40 +65,41 @@ public class QuizTakingScreen : QuizScreen
         }
     }
 
-    private GameObject GetQuizTypePrefab()
+    private void QuestionCount()
     {
-        Type enumType = typeof(QuizObj.QuizTypes);
-        string quizTypeString = base.quizObj.Type;
+        TotalQuestionsCount = base.quizObj.QuestionsList.Count;
+    }
 
-        if (Enum.IsDefined(enumType, quizTypeString))
+    private void QuestionProgressTextUpdate()
+    {
+        string QuestionProgressText;
+        QuestionProgressText = "Question ";
+        QuestionProgressText += (CurrentQuestionNum + 1).ToString();
+        QuestionProgressText += " of " + TotalQuestionsCount;
+
+        QuestionProgress.text = QuestionProgressText;
+    }
+
+    private void AnswerProgressTextUpdate()
+    {
+        string AnswerProgressText;
+        AnswerProgressText = assessmentHandler.QuestionsAnsweredCount.ToString();
+        AnswerProgressText += " of " + TotalQuestionsCount;
+        AnswerProgressText += " Questions Answered";
+
+        AnswerProgress.text = AnswerProgressText;
+    }
+
+    private GameObject GetQuestionTypePrefab()
+    {
+        Type enumType = typeof(QuizQuestion.QuestionTypes);
+        string questionTypeString = activeQuestion.Type;
+
+        if (Enum.IsDefined(enumType, questionTypeString))
         {
-            QuizObj.QuizTypes quizType = (QuizObj.QuizTypes)Enum.Parse(enumType, quizTypeString);
+            QuizQuestion.QuestionTypes quizType = (QuizQuestion.QuestionTypes)Enum.Parse(enumType, questionTypeString);
 
-            switch(quizType)
-            {
-                case QuizObj.QuizTypes.MultipleChoice:
-                    {
-                        Debug.Log("Multiple Choice Quiz");
-                        return MultipleChoicePrefab;
-                    }
-
-                case QuizObj.QuizTypes.Placement:
-                    {
-                        Debug.Log("Placement Quiz");
-                        return PlacementPrefab;
-                    }
-
-                case QuizObj.QuizTypes.ObjectSelection:
-                    {
-                        Debug.Log("Object Selection Quiz");
-                        return SelectionPrefab;
-                    }
-
-                default:
-                    {
-                        return null;
-                    }
-            }
+            return QuizPrefabLoader.GetPrefabType(quizType);
         }
 
         return null;
@@ -94,24 +107,40 @@ public class QuizTakingScreen : QuizScreen
 
     public void BackButton()
     {
-        if (currentQuestionNum > 0)
+        QuizQuestion question = base.quizObj.GetQuestion(CurrentQuestionNum);
+        assessmentHandler.AddQuestion(question);
+
+        if (CurrentQuestionNum > 0)
         {
-            currentQuestionNum--;
+            CurrentQuestionNum--;
             Reload();
         }
     }
 
     public void NextButton()
     {
-        if (currentQuestionNum < (base.quizObj.QuestionsList.Count -1))
+        QuizQuestion question = base.quizObj.GetQuestion(CurrentQuestionNum);
+        assessmentHandler.AddQuestion(question);
+
+        if (CurrentQuestionNum < (TotalQuestionsCount -1))
         {
-            currentQuestionNum++;
+            CurrentQuestionNum++;
             Reload();
         }
     }
 
     public void SubmitButton()
     {
-        //TODO: Quiz Submission Code!
+        QuizQuestion question = base.quizObj.GetQuestion(CurrentQuestionNum);
+        assessmentHandler.AddQuestion(question);
+        Reload();
+
+        if (assessmentHandler.QuestionsAnsweredCount == TotalQuestionsCount)
+        {
+            Debug.Log("Quiz Complete");
+        } else
+        {
+            Debug.Log("Quiz Incomplete! Throw warning!");
+        }
     }
 }

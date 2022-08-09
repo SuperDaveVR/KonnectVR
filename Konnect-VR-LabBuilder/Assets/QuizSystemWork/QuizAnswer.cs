@@ -3,65 +3,55 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class QuizAnswer
+public abstract class QuizAnswer : IQuizAnswer
 {
-    [SerializeField] private string answerText;
-    [SerializeField] private bool isSelected;
-    [SerializeField] private bool isCorrect;
+    [SerializeField, SerializeReference] string answerText;
+    [SerializeField, SerializeReference] string correctAnswer;
 
     public string AnswerText
     {
-        get
-        {
-            return answerText;
-        }
-
-        set
-        {
-            answerText = value;
+        get { return answerText; }
+        set { 
+                answerText = value; 
         }
     }
-
-    public bool IsSelected
-    {
-        get
-        {
-            return isSelected;
-        }
-
-        set
-        {
-            isSelected = value;
-        }
-    }
-
+    public bool IsSelected { get; set; }
     public bool IsCorrect
     {
         get
         {
-            return isCorrect;
-        }
-
-        set
-        {
-            isCorrect = value;
+            return EnteredAnswer == CorrectAnswer;
         }
     }
-
-    public QuizAnswer(string answerText, bool isCorrect)
+    public string EnteredAnswer { get; set; }
+    public string CorrectAnswer
     {
-        this.answerText = answerText;
-        this.isSelected = false;
-        this.isCorrect = isCorrect;
+        get { return correctAnswer; }
+        set { if (ValidateAnswer(value)) 
+                correctAnswer = value; 
+        }
     }
 
-    public void toggleSelected()
-    {
-        isSelected = !isSelected;
-    }
+    public abstract string CorrectTextValue();
 
     public void DebugMe()
     {
-        Debug.Log("Answer: " + answerText + " - IsCorrect?: " + isCorrect.ToString());
+        Debug.Log("Answer: " + AnswerText + " - Correct Answer: " + CorrectAnswer);
+    }
+
+    public abstract QuizAnswer DefaultAnswer();
+
+    public abstract bool ValidateAnswer(string value);
+
+    public void toggleSelected()
+    {
+        IsSelected = !IsSelected;
+    }
+
+    public bool AnswerObjectExists()
+    {
+        bool exists = PlacedObjectsHandler.Instance.CheckObjectExists(answerText);
+
+        return exists;
     }
 }

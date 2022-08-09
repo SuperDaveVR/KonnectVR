@@ -40,10 +40,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - HandPlayer
+  - Hand
+  - Grabbable
+  - Grabbing
   - InteractionPoint
   - No Collision
   m_SortingLayers:
